@@ -1,0 +1,65 @@
+[
+    {
+        "semester": "Fall",
+        "subjects": [
+            {
+                "id": "FALL-MATH101",
+                "name": "Mathematics I",
+                "writer": "Dr. John Smith",
+                "code": "MATH101",
+                "description": "An introduction to algebra, calculus, and mathematical reasoning.",
+                "credits": 3
+            },
+            {
+                "id": "FALL-CS101",
+                "name": "Introduction to Programming",
+                "writer": "Prof. Alice Johnson",
+                "code": "CS101",
+                "description": "Covers the basics of programming using Python and problem-solving skills.",
+                "credits": 4
+            }
+        ]
+    },
+    {
+        "semester": "Summer",
+        "subjects": [
+            {
+                "id": "SUM-PHY101",
+                "name": "Physics I",
+                "writer": "Dr. Emily Brown",
+                "code": "PHY101",
+                "description": "Focuses on classical mechanics, motion, and energy principles.",
+                "credits": 4
+            },
+            {
+                "id": "SUM-ENG101",
+                "name": "English Composition",
+                "writer": "Mr. David Lee",
+                "code": "ENG101",
+                "description": "Improves academic writing, grammar, and essay structure.",
+                "credits": 3
+            }
+        ]
+    },
+    {
+        "semester": "Spring",
+        "subjects": [
+            {
+                "id": "SPR-CHEM101",
+                "name": "Chemistry I",
+                "writer": "Dr. Sarah Adams",
+                "code": "CHEM101",
+                "description": "Introduces basic concepts of chemical reactions and atomic structure.",
+                "credits": 4
+            },
+            {
+                "id": "SPR-HIST101",
+                "name": "History of Science",
+                "writer": "Prof. Michael Green",
+                "code": "HIST101",
+                "description": "Explores major scientific discoveries and their impact on society.",
+                "credits": 3
+            }
+        ]
+    }
+]
