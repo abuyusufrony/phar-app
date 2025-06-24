@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router';
+import { Authcontext } from '../Authprovider/Authprovider';
+
 
 const Login = () => {
-
+    const { handlelogin } = useContext(Authcontext)
     const loginuser = (e) => {
         e.preventDefault();
         const fom = event.target;
         const id = fom.sid.value;
         const pass = fom.password.value;
-        const user = {
-            id, pass
-        }
+        const user = { id, pass }
         console.log(user)
+        handlelogin(id, pass)
+            .then((res) => {
+                const user = res.user
+
+            })
+            .catch((error) => {
+                alert(error.code)
+            })
     }
 
     return (
@@ -21,13 +29,13 @@ const Login = () => {
                 <form onSubmit={loginuser} className="space-y-4">
                     <div>
                         <label htmlFor="studentId" className="block text-gray-700 mb-1">
-                            Student ID
+                            Email Address
                         </label>
                         <input
                             id="studentId"
                             type="text"
                             name='sid'
-                            placeholder="Enter your student ID"
+                            placeholder="Enter your email"
                             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
                         />
                     </div>
@@ -45,7 +53,7 @@ const Login = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full py-2 px-4 rounded-lg text-white"
+                        className="w-full py-2 px-4 rounded-lg text-white cursor-pointer"
                         style={{ backgroundColor: "#FF7F00" }}
                     >
                         Login

@@ -1,9 +1,11 @@
 import React from 'react';
+import Reg from '../../pages/Reg';
 
 const Home = () => {
     return (
         <div>
-            <h2 className='text-6xl'>this are hom</h2>
+
+            <Reg></Reg>
         </div>
     );
 };
