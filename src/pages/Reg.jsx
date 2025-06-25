@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router';
 import { Authcontext } from '../Authprovider/Authprovider';
 import { updateProfile } from 'firebase/auth';
+import { toast } from 'react-toastify';
 
 const Reg = () => {
     const [success, setSuccess] = useState("")
@@ -27,7 +28,7 @@ const Reg = () => {
                 return updateProfile(user, {
                     displayName: nam,
                 }).then(() => {
-                    setSuccess(`${nam}  created successfully! ✅ `);
+                    toast.success(`${nam}  created successfully! ✅ `);
 
                 });
             })

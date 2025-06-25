@@ -7,9 +7,11 @@ const Authprovider = ({ children }) => {
     const auth = getAuth(app);
 
     const [users, setuser] = useState([])
+    const [loading, setloading] = useState(true)
     useEffect(() => {
         const unsuscribe = onAuthStateChanged(auth, (cureentuser) => {
             setuser(cureentuser)
+            setloading(false)
         })
         return () => {
             unsuscribe()
@@ -19,19 +21,22 @@ const Authprovider = ({ children }) => {
     console.log(users)
 
     const createuser = (email, pass) => {
+        setloading(true)
         return createUserWithEmailAndPassword(auth, email, pass)
 
     }
     const handlelogin = (email, password) => {
+        setloading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
     const handleLogout = () => {
+        setloading(true)
         return signOut(auth)
     }
 
     const userinfo = {
-        createuser, users, setuser, handleLogout, handlelogin
+        createuser, users, setuser, handlelogin, handleLogout, loading
     }
 
 

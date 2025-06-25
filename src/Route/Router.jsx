@@ -4,6 +4,8 @@ import Main from '../Main/Main';
 import Login from '../pages/Login';
 import Reg from '../pages/Reg';
 import Home from '../Componets/Home/Home';
+import SemistarDetails from '../Componets/SemisterDetails/SemistarDetails';
+import PrivateRouter from './PrivateRouter';
 
 
 const Router = createBrowserRouter([{
@@ -21,6 +23,12 @@ const Router = createBrowserRouter([{
     {
         path: '/reg',
         element: <Reg></Reg>
+    },
+    {
+        path: '/semidetails',
+        element: <PrivateRouter>
+            <SemistarDetails></SemistarDetails>
+        </PrivateRouter>
     }
 
     ]

@@ -1,10 +1,14 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { Authcontext } from '../Authprovider/Authprovider';
+import { toast } from 'react-toastify';
 
 
 const Login = () => {
     const { handlelogin } = useContext(Authcontext)
+    const loaction = useLocation()
+    const navigate = useNavigate()
+    console.log(loaction)
     const loginuser = (e) => {
         e.preventDefault();
         const fom = event.target;
@@ -15,6 +19,8 @@ const Login = () => {
         handlelogin(id, pass)
             .then((res) => {
                 const user = res.user
+                toast.success(`🎉 Welcome, ${user.displayName || 'User'}!`);
+                navigate('/semidetails');
 
             })
             .catch((error) => {

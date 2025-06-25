@@ -161,7 +161,7 @@ export const semesterData = [
                     {
                         title: "Atomic Structure",
                         content: "Quantum mechanical models of electron configuration, periodic trends in atomic properties, and the historical development of atomic theory through modern experimental evidence.",
-                        video: ""
+                        video: "https://www.youtube.com/embed/OH-aSu-rWgk"
                     },
                     {
                         title: "Chemical Bonds",
@@ -181,7 +181,7 @@ export const semesterData = [
                     {
                         title: "Solid Dosage Forms",
                         content: "Design and manufacturing of tablets and capsules, including excipient roles.",
-                        video: ""
+                        video: "https://www.youtube.com/embed/vhr5PKJkmbI"
                     },
                     {
                         title: "Drug Solubility",

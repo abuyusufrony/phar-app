@@ -11,7 +11,7 @@ const Main = () => {
         <div>
             <Nav></Nav>
             <Outlet></Outlet>
-            <Footer></Footer>
+
 
 
         </div>
