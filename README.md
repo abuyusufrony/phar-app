@@ -1,6 +1,6 @@
 # 🔐 students  Firebase Auth App 
 
-👉 **Live Demo:** [https://verdant-caramel-5d9c6f.netlify.app/](https://verdant-caramel-5d9c6f.netlify.app/)
+👉 **Live Demo:** [https://verdant-caramel-5d9c6f.netlify.app/](click Here)
 
 A simple React application with authentication using Firebase and styled using Tailwind CSS. Includes support for user login, registration.
 
@@ -48,8 +48,8 @@ src/
 ## 🧑‍💻 Author
 
 **Your Name**  
-GitHub: [https://github.com/your-github-username](https://github.com/your-github-username)  
-Portfolio: [https://yourportfolio.com](https://yourportfolio.com) (optional)  
+GitHub: [https://github.com/abuyusufrony](https://github.com/your-github-username)  
+  
 
 Feel free to connect with me or check out more of my projects!
 
