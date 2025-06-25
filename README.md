@@ -49,7 +49,9 @@ src/
 ## 🧑‍💻 Author
 
 **Your Name**  
-GitHub: [https://github.com/abuyusufrony](https://github.com/your-github-username)  
+GitHub:(https://github.com/abuyusufrony) 
+
+abuyusufrony@gmail.com 
   
 
 Feel free to connect with me or check out more of my projects!
