@@ -8,7 +8,7 @@ import Footer from '../Componets/Footer/Footer';
 
 const Main = () => {
     return (
-        <div>
+        <div className='bg-[#faf9fb]'>
             <Nav></Nav>
             <Outlet></Outlet>
 

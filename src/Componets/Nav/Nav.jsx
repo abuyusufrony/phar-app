@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Authcontext } from '../../Authprovider/Authprovider';
 import { FiLogOut, FiLogIn, FiUser, FiMoon, FiSun } from 'react-icons/fi';
 import { Link, useNavigate } from 'react-router';
@@ -7,6 +7,10 @@ import { Link, useNavigate } from 'react-router';
 const Nav = () => {
     const { users, handleLogout } = useContext(Authcontext);
     const navigate = useNavigate();
+
+
+
+
 
 
     const handleLogoutAndRedirect = async () => {

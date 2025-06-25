@@ -40,12 +40,13 @@ const SemistarDetails = () => {
     ) || [];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-100 to-white p-6">
+        <div className="min-h-screen bg-gradient-to-br from-slate-100 0 to-white p-6 .dark:bg-gray-90">
             <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">📚  Explore Your Learning Journey</h1>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
 
                 {/* Semester List */}
                 <div className="bg-white rounded-2xl shadow p-4 space-y-2">
+
                     <div className="text-lg font-semibold text-gray-700 mb-4">
                         {selectedTopic
                             ? "Topic Details"

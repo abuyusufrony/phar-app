@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { Authcontext } from '../Authprovider/Authprovider';
 import { updateProfile } from 'firebase/auth';
 import { toast } from 'react-toastify';
@@ -7,7 +7,9 @@ import { toast } from 'react-toastify';
 const Reg = () => {
     const [success, setSuccess] = useState("")
 
+
     const { createuser, setuser } = useContext(Authcontext)
+    const nav = useNavigate()
 
     const adduser = (e) => {
         e.preventDefault();
@@ -29,7 +31,7 @@ const Reg = () => {
                     displayName: nam,
                 }).then(() => {
                     toast.success(`${nam}  created successfully! ✅ `);
-
+                    nav('/semidetails')
                 });
             })
             .catch((error) => {
